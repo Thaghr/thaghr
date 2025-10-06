@@ -1,85 +1,85 @@
+<!-- 🎯 HEADING & MISSION 🎯 -->
 <h1 align="center">Mohamed Hossny</h1>
 <p align="center">
   <a href="https://github.com/Thaghr">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Source+Code+Pro&size=23&duration=2500&pause=500&color=F8F8F2&center=true&vCenter=true&width=500&lines=Offensive+Security+%7C+Python+Developer;Penetration+Tester+%7C+Tool+Builder;Bridging+the+gap+between+offense+and+defense." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=600&color=C792EA&center=true&vCenter=true&width=600&lines=Offensive+Security+%7C+Python+Engineer;I+build+the+tools+that+find+the+cracks+in+the+armor.;Crafting+the+offensive+edge+for+a+safer+digital+world." alt="Typing SVG" />
   </a>
 </p>
 
 ---
 
-### 👤 About Me
+### 🧠 Philosophy
 
-I am an offensive security professional and developer specializing in creating custom security tools with Python. My focus is on identifying vulnerabilities through penetration testing and building automated solutions to enhance security assessments. I believe in a proactive approach to security, where understanding attack methodologies is essential for developing robust and resilient defenses.
+In cybersecurity, every system has an armor. My role is to be the one who finds the cracks—not to exploit, but to reinforce. I engineer the tools and methodologies that simulate real-world attacks, providing the critical intelligence needed to build truly resilient defenses. This is not just a job; it's a commitment to staying one step ahead.
 
 ---
 
-### 🛠️ Technical Skills
+### ⚙️ Core Arsenal & Expertise
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,bash,linux,git,docker,nginx,aws,postman" />
+  <img src="https://skillicons.dev/icons?i=python,bash,linux,git,docker,aws,postman" />
 </p>
 
-**🔍 Security Domains:**
-- Penetration Testing (Web Applications, Networks)
-- Vulnerability Assessment & Management
-- Security Tooling & Automation
-- Open-Source Intelligence (OSINT)
+**🔐 Offensive Operations:**
+- **Penetration Testing:** Systematic assessment of web, network, and API security.
+- **Vulnerability Research:** Proactive discovery and analysis of security flaws.
+- **Tool Development:** Architecting custom Python solutions for automation and exploitation.
+- **Adversary Simulation:** Emulating TTPs to test blue team capabilities.
 
 **📚 Key Python Libraries:**
 `requests` | `scapy` | `pwntools` | `asyncio` | `beautifulsoup4` | `paramiko`
 
 ---
 
-### 📊 GitHub Activity
+### 📊 Digital Footprint
 
 <p align="center">
-  <img width="49.5%" src="https://github-readme-stats.vercel.app/api?username=thaghr&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" />
-  <img width="49.5%" src="https://github-readme-streak-stats.herokuapp.com/?user=thaghr&theme=github_dark&hide_border=true" />
+  <img width="49.5%" src="https://github-readme-stats.vercel.app/api?username=thaghr&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=C792EA&icon_color=FFAB70&text_color=FFFFFF" />
+  <img width="49.5%" src="https://github-readme-streak-stats.herokuapp.com/?user=thaghr&theme=github_dark&hide_border=true&background=0D1117&stroke=C792EA&ring=C792EA&fire=FFAB70&currStreakLabel=FFFFFF" />
 </p>
 
-<!-- 🐍 CONTRIBUTION GRAPH 🐍 -->
+<!-- 🐍 CONTRIBUTION SNAKE 🐍 -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Thaghr/Thaghr/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Thaghr/Thaghr/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Thaghr/Thaghr/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Thaghr/Thaghr/output/github-contribution-grid-snake-dark.svg">
   </picture>
 </p>
 
 ---
 
-### 🚀 Featured Projects
+### ⚙️ Open-Source Arsenal
 
-> _A selection of my open-source tools and scripts designed for security professionals._
+> _Proof of work. These are some of the tools I've built to solve real-world security challenges._
 
 <!-- PROJECT 1 -->
 <p align="center">
   <a href="LINK_TO_YOUR_PROJECT_1">
-    <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=thaghr&repo=YOUR_REPO_NAME_1&theme=github_dark&hide_border=true" alt="Project 1" />
+    <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=thaghr&repo=YOUR_REPO_NAME_1&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=C792EA&text_color=FFFFFF" alt="Project 1" />
   </a>
 <!-- PROJECT 2 -->
   <a href="LINK_TO_YOUR_PROJECT_2">
-    <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=thaghr&repo=YOUR_REPO_NAME_2&theme=github_dark&hide_border=true" alt="Project 2" />
+    <img width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=thaghr&repo=YOUR_REPO_NAME_2&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=C792EA&text_color=FFFFFF" alt="Project 2" />
   </a>
 </p>
 
 **[Project Name 1](LINK_TO_YOUR_PROJECT_1)**
-- _A concise description of the tool's purpose. (e.g., A Python script to automate subdomain enumeration using multiple sources.)_
+- _A concise description of the tool's purpose. (e.g., A high-performance asynchronous subdomain enumeration tool.)_
 - **Tech:** `Python`, `asyncio`, `requests`
 
 **[Project Name 2](LINK_TO_YOUR_PROJECT_2)**
-- _Another concise description. (e.g., A simple tool to test for common misconfigurations in web applications.)_
+- _Another concise description. (e.g., A modular script for testing common web application misconfigurations.)_
 - **Tech:** `Python`, `Flask`
 
 ---
 
 ### 🧠 Continuous Learning & Engagement
 
-I actively participate in security challenges and document my findings to stay sharp and contribute to the community.
+I believe in sharpening my skills in the field. Here's where I test my mettle and share my knowledge.
 
 <p align="center">
   <a href="https://app.hackthebox.com/profile/YOUR_HTB_PROFILE_ID">
-    <img src="https://img.shields.io/badge/HackTheBox-%23111315.svg?style=for-the-badge&logo=HackTheBox&logoColor=white" alt="Hack The Box" />
+    <img src="https://img.shields.io/badge/HackTheBox-%23111315.svg?style=for-the-badge&logo=HackTheBox&logoColor=9FEF00" alt="Hack The Box" />
   </a>
   <a href="https://tryhackme.com/p/YOUR_THM_PROFILE">
     <img src="https://img.shields.io/badge/TryHackMe-%231c1a28.svg?style=for-the-badge&logo=TryHackMe&logoColor=red" alt="TryHackMe" />
@@ -91,9 +91,9 @@ I actively participate in security challenges and document my findings to stay s
 
 ---
 
-### 📬 Let's Connect
+### 📡 Let's Connect
 
-Feel free to reach out for collaborations, opportunities, or just a discussion about security.
+I'm always open to discussing new ideas, security challenges, and potential collaborations. If you're passionate about building a more secure digital world, let's talk.
 
 <p align="center">
   <a href="[YOUR_LINKEDIN_URL]">
@@ -110,5 +110,5 @@ Feel free to reach out for collaborations, opportunities, or just a discussion a
 ---
 
 <p align="center">
-  <i>"Security is always excessive until it's not enough."</i>
+  <i>"The best way to predict the future is to invent it."</i>
 </p>
