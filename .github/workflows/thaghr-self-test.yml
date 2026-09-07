@@ -1,0 +1,12 @@
+name: thaghr self-test
+on: [workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: thaghr/thaghr-action@v1
+        with:
+          example: examples/01-hello-agent
+          trials: 5
+          fail-under: 1.5
