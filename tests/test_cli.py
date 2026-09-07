@@ -98,6 +98,44 @@ class TestCLIAgainstStub:
         # confirms the pretty path actually ran instead of the plain one.
         assert "╭" in captured.out or "─" in captured.out
 
+class TestCLIFailUnder:
+    def test_fail_under_exits_zero_when_metric_meets_threshold(self, stub_example, tmp_path):
+        output = tmp_path / "out.csv"
+        exit_code = main(
+            [
+                "run", str(stub_example),
+                "--trials", "10",
+                "--fail-under", "0.5",
+                "--output", str(output),
+                "--max-cost", "10",
+            ]
+        )
+        assert exit_code == 0
+
+    def test_fail_under_exits_nonzero_when_metric_below_threshold(self, stub_example, tmp_path, capsys):
+        output = tmp_path / "out.csv"
+        exit_code = main(
+            [
+                "run", str(stub_example),
+                "--trials", "10",
+                "--fail-under", "1.5",  # stub always passes; no metric can exceed 1.0
+                "--output", str(output),
+                "--max-cost", "10",
+            ]
+        )
+        assert exit_code == 1
+        captured = capsys.readouterr()
+        assert "FAIL" in captured.err
+        assert "below --fail-under=1.500" in captured.err
+
+    def test_no_fail_under_flag_does_not_gate(self, stub_example, tmp_path):
+        # default behavior unchanged: omitting --fail-under entirely
+        # should never fail the run regardless of the metric's value.
+        output = tmp_path / "out.csv"
+        exit_code = main(
+            ["run", str(stub_example), "--trials", "10", "--output", str(output), "--max-cost", "10"]
+        )
+        assert exit_code == 0
 
 class TestCLICompare:
     def test_compare_writes_two_csvs_and_prints_report_card(self, stub_example, tmp_path, capsys):

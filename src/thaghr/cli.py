@@ -14,6 +14,7 @@ from thaghr.report import (
     render_report_card_rich,
 )
 from thaghr.runner import CostBudgetExceeded, run_campaign
+from thaghr.metrics import primary_metric
 
 
 def _load_agent(example_dir: Path):
@@ -49,6 +50,13 @@ def _build_parser() -> argparse.ArgumentParser:
     run_parser.add_argument("--output", type=Path, default=Path("thaghr-results.csv"))
     run_parser.add_argument(
         "--k", type=int, default=1, help="k for the pass^k headline metric on the report card"
+    )
+    run_parser.add_argument(
+        "--fail-under",
+        type=float,
+        default=None,
+        help="exit non-zero if the primary metric (pass^k, or GDS fallback when "
+             "pass^k rounds to 0%%) is below this threshold, 0.0-1.0. For CI gating.",
     )
     run_parser.add_argument(
         "--pretty", action="store_true", help="colorized report card via rich (pip install thaghr[pretty])"
@@ -136,6 +144,16 @@ def _run(args: argparse.Namespace) -> int:
         render_report_card_rich(results, args.k, example_name=args.example.name)
     else:
         print(render_report_card(results, args.k, example_name=args.example.name))
+
+    if args.fail_under is not None:
+        name, value = primary_metric(results, args.k)
+        if value < args.fail_under:
+            print(
+                f"thaghr: FAIL, {name}={value:.3f} is below --fail-under={args.fail_under:.3f}",
+                file=sys.stderr,
+            )
+            return 1
+
     return 0
 
 
